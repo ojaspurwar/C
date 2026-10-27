@@ -12,7 +12,7 @@ int main(){
 
     for (int i = 0;i<a;i++){
         scanf("%d",&num);
-        sum += (num % 100) / 10 * (num % 10);
+        sum += (num / 10) % 10 * (num % 10);
     }
 
     printf("Sum of products of last two digits: %d\n",sum);
